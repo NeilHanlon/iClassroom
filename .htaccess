@@ -1,0 +1,6 @@
+DirectoryIndex index.php index.html
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|images|style|user_guide|robots\.txt|assets)
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
